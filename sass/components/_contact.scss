@@ -1,0 +1,32 @@
+// components/_contact.scss
+
+.contact {
+  padding: 3rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &__intro {
+    text-align: center;
+    color: $color-muted;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-form {
+  &__label {
+    font-weight: 500;
+    color: $color-text;
+  }
+
+  &__input {
+    border-radius: 0.75rem;
+    border: 1px solid #d1d5db;
+  }
+
+  &__button {
+    font-weight: 600;
+  }
+}

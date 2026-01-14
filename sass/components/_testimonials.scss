@@ -1,0 +1,35 @@
+// components/_testimonials.scss
+
+.testimonials {
+  padding: 3rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__container {
+    max-width: 640px;
+  }
+}
+
+.testimonial {
+  max-width: 640px;
+  margin: 0 auto;
+  font-style: italic;
+
+  &__text {
+    margin: 0;
+    color: $color-text;
+  }
+
+  &__author {
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &__meta {
+    font-size: 0.9rem;
+  }
+}

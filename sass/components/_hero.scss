@@ -1,0 +1,50 @@
+.hero {
+  padding: 4rem 0 3rem;
+
+  &__container {
+    @include flex-center(2.5rem);
+    align-items: center;
+  }
+
+  &__text {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: $color-text;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: $color-muted;
+    margin-bottom: 1.5rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__image {
+    flex: 1;
+  }
+
+  &__mockup {
+    background: linear-gradient(135deg, $color-primary, $color-secondary);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    color: #ffffff;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+  }
+
+  @include respond(sm) {
+    padding-top: 3rem;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// main.scss
+
+// 1. Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. Vendors
+@import "vendors/normalize";
+
+// 3. Base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// 4. Layout
+@import "layout/container";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+
+// 5. Components
+@import "components/buttons";
+@import "components/hero";
+@import "components/features";
+@import "components/how-it-works";
+@import "components/testimonials";
+@import "components/plans";
+@import "components/contact";
+
+// 6. Pages
+@import "pages/home";
+
+// 7. Themes
+@import "themes/default";

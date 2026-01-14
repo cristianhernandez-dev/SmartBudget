@@ -1,0 +1,38 @@
+// components/_how-it-works.scss
+
+.how-it-works {
+  padding: 3rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.steps-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__card {
+    @include card(1rem);
+    padding: 1.5rem;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-muted;
+    font-size: 0.95rem;
+  }
+}

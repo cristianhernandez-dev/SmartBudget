@@ -1,0 +1,50 @@
+.plans {
+  padding: 3rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+.plan-card {
+  @include card(1rem);
+  padding: 2rem;
+
+  &--highlight {
+    border: 2px solid $color-primary;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__features {
+    margin: 0 0 1.5rem;
+    padding-left: 1rem;
+    list-style: disc;
+  }
+
+  &__feature {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@include respond(lg) {
+  .plans__grid {
+    grid-template-columns: 1fr;
+  }
+}
