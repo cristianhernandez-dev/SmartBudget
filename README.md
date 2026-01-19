@@ -74,12 +74,17 @@ La landing page es completamente responsiva:
 ---
 
 ## 7. Capturas 
+listado de capturas realizadas de la web vista en: "ventana de herramientas de desarrollador"
+
 Capturas vista desktop:
 docs\capturas\screenshot-desktop(1).png
 docs\capturas\screenshot-desktop(2).png
 docs\capturas\screenshot-desktop(3).png
 docs\capturas\screenshot-desktop(4).png
 Capturas vista móvil:
-
-
+docs\capturas\screenshot-mobile(1).png
+docs\capturas\screenshot-mobile(2).png
+docs\capturas\screenshot-mobile(3).png
+docs\capturas\screenshot-mobile(4).png
+docs\capturas\screenshot-mobile(5).png
 
