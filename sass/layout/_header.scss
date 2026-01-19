@@ -1,3 +1,5 @@
+// layout/_header.scss
+
 .site-header {
   background-color: #ffffff;
   box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06);
@@ -12,21 +14,18 @@
     padding: 0.75rem 0;
   }
 
-  &__logo-link {
+&__logo {
     font-weight: 700;
     font-size: 1.25rem;
     color: $color-text;
+    text-decoration: none;
   }
-
-  &__nav {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
   &__nav-list {
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   &__nav-link {
@@ -38,16 +37,42 @@
     }
   }
 
+  &__cta {
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 0.5rem 1.25rem;
+
+    background-color: $color-primary;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-primary-dark;
+      text-decoration: none;
+    }
+  }
+
+
+  // Vista mobile (<= 768px)
   @include respond(md) {
     &__container {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;      // centramos todo
+      gap: 0.75rem;
+      text-align: center;
+    }
+
+    &__nav-list {
+      flex-wrap: wrap;
+      justify-content: center;  // centramos los links
       gap: 0.75rem;
     }
 
-    &__nav {
-      width: 100%;
-      justify-content: space-between;
+    &__cta {
+      align-self: stretch;      // botón ocupa todo el ancho
+      text-align: center;
     }
   }
 }

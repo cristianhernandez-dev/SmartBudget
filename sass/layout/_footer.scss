@@ -1,0 +1,30 @@
+// layout/_footer.scss
+
+.site-footer {
+  background-color: #f9fafb;
+  padding: 2rem 0;
+  border-top: 1px solid #e5e7eb;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // centra todo
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  &__nav a:hover {
+    color: #111827;
+  }
+}
