@@ -29,11 +29,25 @@
   <!-- HEADER / NAVBAR - Block: site-header -->
 <header class="site-header">
   <div class="container site-header__container">
+    <!-- Logo -->
     <a href="#hero" class="site-header__logo">
       SmartBudget
     </a>
 
-    <nav class="site-header__nav" aria-label="Navegación principal">
+    <!-- Botón hamburguesa (solo visible en mobile) -->
+    <button
+      class="site-header__toggle"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false"
+      aria-controls="primary-menu"
+    >
+      <span class="site-header__toggle-bar"></span>
+      <span class="site-header__toggle-bar"></span>
+      <span class="site-header__toggle-bar"></span>
+    </button>
+
+    <!-- Navegación principal -->
+    <nav class="site-header__nav" id="primary-menu" aria-label="Navegación principal">
       <ul class="site-header__nav-list">
         <li class="site-header__nav-item">
           <a href="#features" class="site-header__nav-link">Características</a>
@@ -50,6 +64,7 @@
       </ul>
     </nav>
 
+    <!-- Botón CTA -->
     <a href="#plans" class="btn btn-primary site-header__cta">
       Comenzar gratis
     </a>
@@ -280,5 +295,21 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!--Abrir y cerrar menu-->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.site-header');
+    const toggle = document.querySelector('.site-header__toggle');
+
+    if (!header || !toggle) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = header.classList.toggle('site-header--open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+</script>
+
 </body>
 </html>
